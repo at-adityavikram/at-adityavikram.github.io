@@ -1,0 +1,395 @@
+<html>
+<head><title>Home - Aditya Vikram</title>
+<script src="https://kit.fontawesome.com/3c97733fb1.js" crossorigin="anonymous"></script>
+<style>
+.parallax {
+  background-image: url("assets/earth.png");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 85%;
+  background-color: black;
+}
+.shad{
+  background-image: linear-gradient(rgba(0,0,0,0),black);
+  width: 100%;
+  height: 100%;
+}
+.greet{
+  font-family: "Century Gothic";
+  font-size: 70px;
+  font-weight: regular;
+  color: rgba(220,220,220,200);
+}
+
+.abtme{
+  background-color: rgba(22,48,70,255);
+  width: 100%;
+  height: 600;
+  padding-top: 30;
+  display: -webkit-box;
+  box-shadow: inset -2px 0px 100px -35px #000000;
+ -webkit-box-shadow: inset -2px 0px 100px -35px #000000;
+ -moz-box-shadow: inset -2px 0px 100px -35px #000000;
+ -o-box-shadow: inset -2px 0px 100px -35px #000000;
+  
+}
+.img-circular{
+ width: 250px;
+ height: 250px;
+ background-image: url('assets/nsama.png');
+ background-size: cover;
+ display: block;
+ border-radius: 125px;
+ -webkit-border-radius: 125px;
+ -moz-border-radius: 125px;
+ margin-right: 200px;
+ margin-top: 50px;
+ margin-bottom: 20px;
+ margin-left: 30px;
+ display: inline-block;
+ float: left;
+ -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.6);
+ -moz-box-shadow:    0px 0px 30px 0px rgba(0, 0, 0, 0.6);
+ box-shadow:         0px 0px 30px 0px rgba(0, 0, 0, 0.6);
+ 
+}
+@keyframes rtt {
+  from {-webkit-transform:rotate(0deg);}
+  to {-webkit-transform:rotate(360deg);}
+}
+.img-circular:hover{
+ -webkit-box-shadow: 0px 0px 30px 0px rgba(255, 255, 255, 0.6);
+ -moz-box-shadow:    0px 0px 30px 0px rgba(255, 255, 255, 0.6);
+ box-shadow:         0px 0px 30px 0px rgba(255, 255, 255, 0.6);
+ animation: rtt 3s infinite;
+}
+.s-heading{
+  font-family: "Century Gothic";
+  font-size: 50px;
+  color: rgba(220,220,220,200);
+  display: inline;
+  font-weight: semibold;
+  margin-bottom: 20px;
+}
+
+a{display: inline; padding: 5px 5px 5px 5px; font-family:"Century Gothic" text-decoration: none; color: white;}
+a:hover{background-color: rgba(40,40,40,80);}
+
+.btn{
+  background-color: #253c52; 
+  border-radius: 5px; 
+  float: right; 
+  margin-right: 20px;
+  text-decoration: none;
+ }
+.btn:hover{
+  background-color: rgba(40,50,80,100);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow:    0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow:         0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+iframe{
+  overflow:hidden;
+}
+.card{
+  padding: 40 20 20 20;
+  margin-bottom: 20;
+  margin-right: 100;
+  background-color: #1da1f2;
+  color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow:    0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  box-shadow:         0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  min-height: 200;
+}
+.card:hover{
+ animation: zm 0.5s;
+ -webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.6);
+ -moz-box-shadow:    0px 0px 40px 0px rgba(0, 0, 0, 0.6);
+ box-shadow:         0px 0px 40px 0px rgba(0, 0, 0, 0.6);
+}
+@keyframes zm {
+  from {-webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);}
+  to {-webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.6);}
+}
+
+
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 320px);
+  grid-gap: 0px;
+  justify-content: space-between;
+
+  
+  /* boring properties: */
+  list-style: none;
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-width: 100%
+  float: center;
+  -webkit-box-pack: center;
+  display: grid;
+  width: 100%;
+  -webkit-box-shadow: 0px -11px 30px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow:    0px -11px 30px 0px rgba(0, 0, 0, 0.2);
+  box-shadow:         0px -11px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+li{
+height: 250;
+
+}
+body{
+overflow-y: scroll;
+overflow-x: hidden;
+background-color: 263238;
+}
+
+</style>
+<link rel="stylesheet" href="css/csslider.css" />
+</head>
+<body style="margin: 0 0 0 0;">
+
+
+<div class="parallax">
+<div id="header" style="float: top; height: 80px; padding-top: 21px; background: rgba(0,0,0, 0.1); width: 100%; transition: 1s; -webkit-box-align: center;">
+
+<img src="assets/nsama.png" align="left" id="logo" width=50px height=50px style="padding: 8px 5px 5px 15px;">
+<div style="float: right; width: 620; padding: 20 2 20 20; color: white;">
+<a>Home</a>
+<a>About</a>
+<a>Experience</a>
+<a>Skills</a>
+<a>Quote</a>
+<a>Gallery</a>
+<a>Connect</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://twitter.com/RealAV_" target="_blank" onmouseover="this.style.color='1da1f2'" onmouseout="this.style.color='#ffffff'"><i class="fab fa-twitter"></i></a>
+<a href="http://github.com/at-adityavikram_" target="_blank" onmouseover="this.style.color='6e5494'" onmouseout="this.style.color='#ffffff'"><i class="fab fa-github"></i></a>
+<a href="http://www.reddit.com/user/BnL_SLAx001" target="_blank" onmouseover="this.style.color='ff4500'" onmouseout="this.style.color='#ffffff'"><i class="fab fa-reddit"></i></a>
+<a href="mailto: adityavikram2016@gmail.com" onmouseover="this.style.color='fbbc05'" onmouseout="this.style.color='#ffffff'"><i class="fab fa-google"></i></a>
+</div>
+</div>
+
+<div class="shad" id="main">
+<br><br><br><br><br><br><br><br>
+<h1 class="greet" align="center">
+Hello! I'm<br>Aditya Vikram
+</h1>
+<p align="center" style="color: rgba(220,220,220,200);">
+<font face="Century Gothic" size=4px><b>
+Welcome to my site
+</b></font>
+</p>
+</div>
+</div>
+<div class="abtme" style="-webkit-box-pack: center; -webkit-box-align: center; min-height: 600; height: auto; padding-bottom: 30px;">
+<div style="width: 70%; margin: auto; clear: center;">
+<div class="img-circular" align="left"></div>
+<div style="display: block;">
+<h2 class="s-heading" >About Me</h2><br>
+<font face="Century Gothic" size=4px color="white">
+​I'm an Astronomy and Astrophysics enthusiast, also good at programming, design and art.<br>
+<br>
+​Also an avid reader, fiction and non fiction alike, and a master of procrastination.
+<br><br>
+Love to solve logical and reasoning problems
+</font><br><br>
+<a class="btn" href="http://www.bing.com" target="_blank" style="border-radius: 10px;">Read more</a>
+</div>
+
+</div>
+
+</div>
+
+<div class="abtme" style="background-color: black; height: 1500; -webkit-box-pack: center; text-align: center; display: block;">
+
+<div>
+<img src="assets/iss.png" width=85% style="margin-top: 80px; max-width: 1000px;"><br><br>
+
+<h2 class="s-heading" style="font-size: 30;">My Experiences and Achievements</h2><br><br>
+<h3 class="s-heading" style="font-size: 15; color: gray;">Competitions and workshops i've been in</h3></br>
+<h3 class="s-heading" style="font-size: 12; color: gray;">(Plus some other stuff)</h3></br>
+<br>
+</div><br><br>
+ <div style="float: left; clear: left; margin-right: 15%;">
+ <table><tr><td rowspan=10 style="width: 11%;">tline</td>
+ <td><h3 style="font-size: 20; color: rgba(200,200,200,1); margin-left: 10%; width: 400;">Utopia MUN</h1></td>
+ </tr>
+ <tr><td><h3  style="font-size: 17; color: rgba(160,160,160,1); margin-left: 10%; width: 100%; font-weight: normal; margin-right: 10%;">2019 - Participated as delegate of Egypt in UNCSW<br></h1><br></td>
+ </tr>
+ <tr>
+ <td><h3 style="font-size: 20; color: rgba(200,200,200,1); margin-left: 10%; width: 400;">Global Research Immersion Programme</h1></td>
+ </tr>
+ <tr><td><h3  style="font-size: 17; color: rgba(160,160,160,1); margin-left: 10%; width: 100%; font-weight: normal; margin-right: 10%;">2019 - Best Solution Award, at the National University of Singapore<br></h3><br></td>
+ </tr>
+ <tr>
+ <td><h3 style="font-size: 20; color: rgba(200,200,200,1); margin-left: 10%; width: 400;">Epsilon</h1></td>
+ </tr>
+ <tr><td><h3 style="font-size: 17; color: rgba(160,160,160,1); margin-left: 10%; width: 100%; font-weight: normal; margin-right: 10%;">2019 - 2nd Place in writing authoring paper on Asteroid Capture and Retrieval<br></h1><br></td>
+ </tr>
+ <tr>
+ <td><h3 style="font-size: 20; color: rgba(200,200,200,1); margin-left: 10%; width: 400;">Japanese, Level N5</h1></td>
+ </tr>
+ <tr><td><h3 style="font-size: 17; color: rgba(160,160,160,1); margin-left: 10%; width: 100%; font-weight: normal; margin-right: 10%;">2020 - Finished Japanese Level N5 at TMH, with highest score in institute. Waiting to give JLPT.<br></h3><br></td>
+ </tr>
+  <tr>
+ <td><h3 style="font-size: 20; color: rgba(200,200,200,1); margin-left: 10%; width: 400;">Vigyantram</h1></td>
+ </tr>
+ <tr><td><h3 style="font-size: 17; color: rgba(160,160,160,1); margin-left: 10%; width: 100%; font-weight: normal; margin-right: 10%;">2018 -  Zonal Rank 1, at IIT Bombay<br></h3><br></td>
+ </tr>
+ </table>
+ <a class="btn" href="http://www.bing.com" target="_blank" style="float: left; margin-left: 20%; border-radius: 10px;")>View more</a>
+ </div>
+</div>
+
+<br><br>
+<h1 align="center" style="color: white;">My Skills</h1>
+<h3 align="center" style="font-size: 15; color: rgba(160,160,160,1); font-weight: normal; height: auto;">"It's just what i do"<br></h3><br>
+<br>
+
+<ul class="wrapper" style="display: fit-content; -webkit-box-pack: center; height: 1700; background-color: 384a59; padding-top: 50; overflow-y:hidden;">
+
+<li class="card" align="center" style="width:200; background-color: d32f2f;">
+  <img src="img_avatar.png" alt="Astronomy" style="width:100;">
+  <div class="container">
+    <h4><b>Astronomy</b></h4>
+    <p>Love of my life<br><br><br></p>
+  </div>
+</li>
+
+<li class="card" align="center" style="width:200; background-color: e3334e;">
+  <img src="img_avatar.png" alt="some_image" style="width:100;">
+  <div class="container">
+    <h4><b>3D Modelling and 3D Printing</b></h4>
+    <p>Using Sketchup, Blender, Wings3D<br><br><br></p>
+  </div>
+</li>
+
+
+
+<li class="card" align="center" style="width:200; background-color: C2185B;">
+  <img src="img_avatar.png" alt="some_image" style="width:100;">
+  <div class="container">
+    <h4><b>VB.NET</b></h4>
+    <p>Just to be weird, I'm rather good at it<br><br><br></p>
+  </div>
+</li>
+
+
+
+<li class="card" align="center" style="width:200; background-color: 7B1FA2;">
+  <img src="img_avatar.png" alt="some_image" style="width:100;">
+  <div class="container">
+    <h4><b>Powerpoint</b></h4>
+    <p>I use it instead of Photoshop or Illustrator!</p>
+  </div>
+</li>
+
+<li class="card" align="center" style="width:200; background-color: 512DA8;">
+  <img src="img_avatar.png" alt="some_image" style="width:100;">
+  <div class="container">
+    <h4><b>C#</b></h4>
+    <p>Just fine at it</p>
+  </div>
+</li>
+
+<li class="card" align="center" style="width:200; background-color: 303F9F;">
+  <img src="img_avatar.png" alt="some_image" style="width:100;">
+  <div class="container">
+    <h4><b>Python</b></h4>
+    <p>Making just random stuff</p>
+  </div>
+</li>
+
+<li class="card" align="center" style="width:200; background-color: 1976D2;">
+  <img src="img_avatar.png" alt="some_image" style="width:100;">
+  <div class="container">
+    <h4><b>Arduino</b></h4>
+    <p>Somewhat</p>
+  </div>
+</li>
+
+<li class="card" align="center" style="width:200; background-color: 0288D1;">
+  <img src="img_avatar.png" alt="some_image" style="width:100;">
+  <div class="container">
+    <h4><b>Origami and Papermodelling</b></h4>
+    <p>Expert Papermodeller, decent at origami</p>
+  </div>
+</li>
+
+
+<li class="card" align="center" style="width:200; background-color: 0097A7;">
+  <img src="img_avatar.png" alt="some_image" style="width:100;">
+  <div class="container">
+    <h4><b>Graphics Design</b></h4>
+    <p>Unexpected Powerpoint</p>
+  </div>
+</li>
+
+<li class="card" align="center" style="width:200;  background-color: 00796B;">
+  <img src="img_avatar.png" alt="some_image" style="width:100;">
+  <div class="container">
+    <h4><b>UX Design</b></h4>
+    <p>Using XD, and the very unexpected VB.NET</p>
+  </div>
+</li>
+
+<li class="card" align="center" style="width:200; background-color: AFB42B;">
+  <img src="img_avatar.png" alt="some_image" style="width:100;">
+  <div class="container">
+    <h4><b>Writing</b></h4>
+    <p>Have a decent vocabulary, love to write</p>
+  </div>
+</li>
+
+<li class="card" align="center" style="width:200;  background-color: FBC02D;">
+  <img src="img_avatar.png" alt="some_image" style="width:100;">
+  <div class="container">
+    <h4><b>Speedreading</b></h4>
+    <p>I read and proofread very fast with minimal errors</p>
+  </div>
+</li>
+
+<li class="card" align="center" style="width:200; background-color: FFA000;">
+  <img src="img_avatar.png" alt="some_image" style="width:100;">
+  <div class="container">
+    <h4><b>Tri-lingual</b></h4>
+    <p>Can read and converse in basic Japanese (N5), fluent in Hindi and English</p>
+  </div>
+</li>
+
+<li class="card" align="center" style="width:200; background-color: F57C00;">
+  <img src="img_avatar.png" alt="some_image" style="width:100;">
+  <div class="container">
+    <h4><b>Robotics</b></h4>
+    <p>Just fine at that, love to do it</p>
+  </div>
+</li>
+
+<li class="card" align="center" style="width:200;  background-color: E64A19">
+  <img src="img_avatar.png" alt="some_image" style="width:100;">
+  <div class="container">
+    <h4><b>Electronics</b></h4>
+    <p>Love prototyping random stuff on breadboards, dismantling appliances</p>
+  </div>
+</li>
+
+<li class="card" align="center" style="width:200; background-color: 424242; -webkit-box-pack: center; -webkit-box-align: center;">
+<br><br><br>
+    <h1><b>More</b></h1>
+
+</li>
+
+</ul>
+<div style="height: 700; width: 100%, padding: 30px; background-image: url(assets/moon.jpg); background-attachment: fixed; background-position:0 80; -webkit-box-shadow: inset 0px 11px 30px 0px rgba(0, 0, 0, 1);-moz-box-shadow: inset 0px 11px 30px 0px rgba(0, 0, 0, 1); box-shadow: inset 0px 11px 30px 0px rgba(0, 0, 0, 1);">
+<div style="height: 500; width: 85%; background-color: white; align: center;">
+</div>
+</div>
+
+
+</body>
+</html>
